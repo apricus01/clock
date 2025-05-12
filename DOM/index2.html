@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="langauge">
+    <li>
+            javascript
+
+        </li>
+    </ul>
+</body>
+<script>
+    // function addlang(lang){
+    //      const num=document.createElement('li');
+    //      num.innerHTML=`${lang}`
+    //      document.querySelector('.langauge').appendChild(num)
+    // }
+    // addlang("PYTHON")
+    // addlang("ruby")
+    // addlang("mango")
+
+     function addlangopt(lang){
+         const num=document.createElement('li');
+         num.appendChild(document.createTextNode(lang))
+         document.querySelector('.langauge').appendChild(num)
+    }
+    addlangopt("PYTHON")
+    addlangopt("ruby")
+    addlangopt("mango")
+
+    //edit
+    const edit=document.querySelector("li:nth-child(2)")
+    edit.outerHTML='<li>himanshu</li>'
+
+    const edit1=document.querySelector("li:nth-child(3)")
+    edit1.remove()
+</script>
+</html>
